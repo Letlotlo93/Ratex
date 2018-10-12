@@ -1,8 +1,9 @@
 .data-table{ 
     width: 80%;
     border-style: solid 0.5px;
-    margin-left: 120px;
-    border-color: black;
+    margin-left: 200px;
+    /* border-color: black; */
+    background-color: grey;
 
 }
 tr,td{
@@ -10,12 +11,8 @@ tr,td{
     border-style: solid;
     border-color: black;
 
-}
-thead{
-  border-color: black;
 
 }
-table {
-    border-color: black;
-}
+
+
 

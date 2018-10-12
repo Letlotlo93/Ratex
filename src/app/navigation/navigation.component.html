@@ -6,23 +6,27 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async)">
-    <mat-toolbar color="primary"><img src="/Users/academy_intern/Desktop/ProjectRatex/src/images/logo.png"></mat-toolbar>
+    <!-- <mat-toolbar color="primary"></mat-toolbar> -->
     <mat-nav-list>
-      <a mat-list-item href="/home-page">Home </a>
-      <a mat-list-item href="/faq-page">FAQ </a>
+        
+      <a mat-list-item href ="/home-page" >HOME</a>
+      <a mat-list-item href="/faq-page" >FAQ </a>
+      <a mat-list-item href="/popup" >SETTINGS</a>
+      
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
+        <img src="/assets/images/logo.png">
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+        >Menu
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>ProjectRatex</span>
+      <!-- <span>ProjectRatex</span> -->
     </mat-toolbar>
     <router-outlet></router-outlet>
   

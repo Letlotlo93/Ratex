@@ -1,12 +1,46 @@
 .sidenav-container {
   height: 100%;
+  position: fixed;
+  /* background-color:whitesmoke; */
 }
 
 .sidenav {
   width: 200px;
+  background-color: black;
+  margin-top: 65px;
+  position: fixed;
+ 
 }
+
 
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
+  background-color: lightgray;
+}
+
+
+button{
+  margin-left:200px;
+  position: absolute;
+  color: black;
+  
+}
+.mat-list-item{
+  color:white;
+  border-style: 1px solid;
+}
+.active {
+  background-color:white;
+  color: black;
+}
+/* @media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+} */
+img{
+  width: 100px;
+  height: 150px;
 }

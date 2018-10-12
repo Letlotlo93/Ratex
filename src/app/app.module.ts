@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule,Routes} from '@angular/router';
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,6 +10,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { HomePageComponent } from './home-page/home-page.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { DatatableComponent } from './datatable/datatable.component';
+
+
 
 const appRoutes:Routes = [
   {path:'home-page',component: HomePageComponent},
@@ -25,7 +25,8 @@ const appRoutes:Routes = [
     NavigationComponent,
     HomePageComponent,
     FaqPageComponent,
-    DatatableComponent
+    DatatableComponent,
+    
   ],
   imports: [
     BrowserModule,
